@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        .main{
+            height: 100vh;
+            border:2px solid red;
+            .box
+            {
+                height: 40%;
+                width: 40%;
+                border: 3px solid red;
+                background-image: url(https://themewagon.github.io/travela/img/explore-tour-1.jpg);
+                background-position: center;
+                background-size: cover;
+                position: relative;
+             
+            }
+            .box{
+                overflow: hidden;
+            }
+            .sl{
+                    background-color: aqua;
+                    animation-name: box;
+                    /* transition: 3s; */
+                    height: 100%;
+                    width: 100%;
+                    opacity:0.3;
+                    /* display: none; */
+                    /* position: absolute; */
+                }
+            .box:hover .sl{
+                transition: 3s;
+                transform: translateY(-500px);
+                
+                    
+                }
+                .box:hover{
+                    transform: scale(1.1);
+                    /* transition: 3s ease-in-ease-out; */
+                    transition: all 3s ease-in-out;
+                    /* display: block; */
+                    /* transition: 3s; */
+                    
+                }
+                
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="main">
+            <div class="box">
+                <div class="sl">
+
+                </div>
+            </div>
+           
+            
+        </div>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B R Architect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            /* height:10vh; */
+            /* border: 3px solid red; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            /* justify-content: space-between; */
+             align-items: center;
+             position: sticky;
+             background-color: white;
+             z-index: 1;
+             font-size: 20px ;
+             
+             top: 0px;
+             flex-wrap: wrap;
+            
+           .right-header > ul{
+
+            display: flex;
+            width: 10%;
+            text-align: center;
+            font-size: 20px;
+            list-style-type: none;
+            /* flex-wrap: wrap; */
+          }
+          
+          .right-header > ul > li {
+             flex-wrap: wrap;
+             display: flex;
+                padding: 10px;
+                margin: 10px;
+                justify-content: space-between;
+
+              }
+        }
+        h3{
+          display: flex;
+          align-items: center;
+          margin-left: 25px;
+        }
+        
+        .container{
+            background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+            height: 100vh;
+            width: 100%;
+            background-position:center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                /* height: 20%; */
+                padding: 2%;
+                background-color: black;
+                color: white;
+                display: flex;
+
+                align-items: center;
+                opacity: 0.6;
+                span{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 35px;
+
+                    
+                }
+               
+            }
+            h2{
+                color: aliceblue;
+                font-size: 35px;
+                display: flex;
+                justify-content: space-evenly;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        .box{
+            height:40vh;
+            width: 23%;
+            background-image: url(	https://www.w3schools.com/w3images/house3.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box1{
+            height:40vh;
+            width: 23%;
+            background-image: url(	https://www.w3schools.com/w3images/house2.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box2{
+            height:40vh;
+            width: 23%;
+            background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box3{
+            height:40vh;
+            width: 23%;
+            background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box4{
+            height:40vh;
+            width: 23%;
+            background-image: url(	https://www.w3schools.com/w3images/house5.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box5{
+            height:40vh;
+            width: 23%;
+            background-image: url(	https://www.w3schools.com/w3images/house3.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box6{
+            height:40vh;
+            width: 23%;
+            background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        .box7{
+            height:40vh;
+            width: 23%;
+            background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+            background-position: center;
+            background-size: cover;
+            /* display: flex; */
+            
+          h1{
+            background-color: black;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            
+          }
+         
+        }
+        p{
+            align-items: center;
+        }
+        .mbox{
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            h1{
+                font-size: 20px;
+                color: white;
+                background-color: black;
+                width:49%;
+                padding: 1.5% 0%;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            
+        }
+        .project-header{
+            height: 20vh;
+            width: 100%;
+            /* border: 2px solid pink; */
+            /* background-color: rgb(216, 71, 95); */
+            display: flex;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 35px;
+            margin-left: 25px;
+        }
+        .about{
+          height: 15vh;
+          padding-top: 10px;
+          h3{
+            margin-left: 25px;
+          }
+
+          p{
+            margin-left: 25px;
+            margin-right: 25px;
+          }
+        }
+         h3{
+            height: 10vh;
+            font-size:20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          p{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+        
+        .card{
+          height: 100vh;
+          border: 2px solid  red;
+        width: 100%;
+        display: flex;
+        padding-top: 80px;
+        /* top: 550vh; */
+        }
+        card1{
+          display: flex;
+          margin-left: 10px;
+          
+        }
+        
+        img{
+          height: 35vh;
+          width: 25%;
+          display: flex;
+          
+          margin-top: 35px;
+          vertical-align: inherit;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            
+
+        }
+       .pic{
+            width: 23%;
+            
+        }
+        .pic img{
+            width: 100%;
+            
+        }
+        .te{
+            display: flex;
+        }
+        .t{
+            height: 100%;
+            width: 100%;
+            /* border: 2px solid black; */
+           
+            justify-content: space-between;
+            font-size:24px ;
+            margin: 17px;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .t span{
+            font-size: 17px;
+            color: gray;
+           
+        }
+        .para{
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        .contact{
+            font-size: 17px;
+            background-color: rgb(234, 233, 233);
+            padding: 8px;
+            text-align: center;
+            margin-top: 18px;
+        }
+        .con{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: 700px;
+            margin-left: 40px;
+            margin-bottom: 35px;
+        }
+        .line{
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+        .form{
+            width: 97.5%;
+            padding: 10px;
+            border:1px solid rgb(216, 212, 212); 
+             margin-left: 1px ; 
+            margin: 10px;
+            font-size: 17px;
+            color: gray; 
+        }
+        .btn{
+          background-color: black;
+          color: white;
+        height: 5vh;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        }
+        .imagemap{
+      
+          height: 80vh;
+        }
+        .imagemap img{
+          height: 90%;
+          width: 100%;
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>BR Architect</h3>
+        <div class="right-header">
+        <ul>
+        <li>Project</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      </div>
+        
+    </div>
+    <div class="container">
+    
+    <h3><span>BR</span></h3>
+    <h2>Architect</h2>
+
+        </div>
+    
+     <!-- <br>
+    <br><br><br><br><br><br> -->
+    <div class="project">
+    <div class="project-header">Project</div>
+    <div class="mbox">
+    <div class="box">
+    <h1>Summer House</h1>
+    </div>
+    <div class="box1">
+    <h1>Brick House</h1>
+    </div>
+    <div class="box2">
+    <h1>Renovated</h1>
+    </div>
+    <div class="box3">
+    <h1>Barm House</h1>
+    </div>
+    <div class="box4">
+    <h1>Summer House</h1>
+    </div>
+    <div class="box5">
+    <h1>Brick House</h1>
+    </div>
+    <div class="box6">
+    <h1>Renovated</h1>
+    </div>
+    <div class="box7">
+    <h1>Barm House</h1>
+    </div>
+
+</div>
+    </div>
+    <div class="about">
+      <h3>About</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit voluptate, ab reiciendis tenetur placeat soluta veritatis animi ut fugit nobis ea quis molestiae porro, cumque pariatur quos sit? Totam vero vitae dolore cum, nobis ex odit. Dolorem, deserunt voluptatibus. Minus reiciendis eveniet quisquam modi, facere possimus ut exercitationem deserunt obcaecati earum. Illum omnis dolore accusantium, qui et voluptate accusamus aspernatur quibusdam rerum voluptatum, autem tempore vero ullam cupiditate nesciunt delectus atque ita</p>
+
+          <!-- <div class="card1">
+            <img src="https://www.w3schools.com/w3images/team2.jpg" width="80%" alt="John">
+            <h3>John Doe</h3>
+            <p class="card-content">CEO & FOUNDER</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. <br>Suspendisse sodales pellentesque elementum.</p>
+            <p><button  class="btn-john">Contact</button></p>
+            
+          </div> -->
+          <div class="main">
+            <div class="pic">
+            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+            </div>
+            <div class="pic">
+             <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+            </div>
+            <div class="pic">
+             <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+            </div>
+            <div class="pic">
+             <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+            </div>
+            </div>
+            <div class="te">
+            <div class="t">
+             John Deo
+             <div><span>CEO & Founder</span></div>
+             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+             <div class="contact">Contact</div>
+            </div>
+            <div class="t">John Doe
+             <div><span>Architect</span></div>
+             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+             <div class="contact">Contact</div>
+            </div>
+            <div class="t">John Doe
+             <div><span>Architect</span></div>
+             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+             <div class="contact">Contact</div>
+            </div>
+            <div class="t">John Doe
+             <div><span>Architect</span></div>
+             <div class="para">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum</div>
+             <div class="contact">Contact</div>
+            </div>
+         </div>
+    </div>
+    <div class="con"><p>Contact</p>
+      <div class="line"><p>Lets get in touch and talk about your next project.</p></div>
+      <input type="text" value="Name" class="form">
+      <input type="text" value="Email" class="form">
+      <input type="text" value="Subject" class="form">
+      <input type="text" value="Comment" class="form">
+      <button class="btn">SEND MESSAGE</button>
+      <div class="imagemap">
+         <img src="map.jpg" alt="" >
+      </div>
+  </div>
+    
+    
+</body>
+</html> 

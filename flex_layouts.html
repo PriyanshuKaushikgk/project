@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout design </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .container{
+            height: 95vh;
+            background-color:rgb(240, 134, 152);
+            width: 100%;
+            
+        }
+        .header{
+            height: 10%;
+            width: 100%;
+            background-color: rgb(219, 124, 187); 
+            margin: 10px;
+        }
+        .main{
+            height: 80%;
+            width: 100%;
+            background-color: rgb(255, 0, 191);
+            display: flex;
+            margin: 10px;
+        }
+        .footer{
+            height: 10%;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        .box1{
+            height: 100%;
+            background-color: blue;
+            width: 40%;
+            /* border: 2px solid black; */
+        }
+        .box2{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            background-color: #17816d;
+           position: relative;
+        }
+        .box2-A{
+            height: 20%;
+            width: 15%;
+            background-color: brown;
+            position: absolute;
+            bottom: 10px;
+            left: 20%;
+        }
+        .box2-B{
+            height: 20%;
+            width: 15%;
+            background-color: rgb(193, 165, 28);
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+        }
+        .box2-C{
+            height: 20%;
+            width: 15%;
+            background-color: brown;
+            position: absolute;
+            bottom: 10px;
+            left: 60%;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header"></div>
+        <div class="main">
+            <div class="box1"></div>
+            <div class="box2">
+                <div class="box2-A"></div>
+                <div class="box2-B"></div>
+                <div class="box2-C"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

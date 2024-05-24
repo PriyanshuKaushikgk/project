@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            
+        }
+        .box{
+            
+            height: 600px;
+            width: 28%;
+            border: 2px solid black;
+            position: relative;
+            
+        }
+        
+        .image2{
+            
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            height: 550px;
+            width: 262px;
+            
+        }
+        .instalogo{
+            color: red;
+            text-align: center;
+            background-color: blueviolet;
+            height: 100px;
+            width: 200px;
+
+        }
+        .form-div{
+            margin-left: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+        <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
+        <img src="screenshot1-2x.png" alt="" class="image2">
+     </div>
+     <div class="form-div">
+        <form>
+            <img src="Logo-Instagram.png" alt="logo" class="instalogo">
+            <input type="text" class="input" placeholder="Phone number , username, or email address" required>
+            <input type="password" class="input" placeholder="password" required>
+            <button class="login-btn">log in</button>
+            <p id="or">or</p>
+            <a href="#" class="fb-login"><i class="bx bx1-facebook-square"></i></a>
+
+        </form>
+     </div>
+    </div>
+</body>
+</html>
